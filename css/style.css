@@ -1,0 +1,26 @@
+#pool{
+    display: flex;
+    align-self: center;
+}
+
+.board{
+    border: 1px solid black;
+    padding: 1em;
+
+}
+
+#pool1{
+    flex:30%;
+    padding: 1em;
+}
+#pool2{
+    flex:40%;
+    padding: 1em;
+}
+#pool2>img{
+    padding: 1em;
+}
+#pool3{
+    flex:30%;
+    padding: 1em;
+}

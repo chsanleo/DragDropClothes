@@ -3,12 +3,30 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Drag & Drop</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+        <h3></h3>
+
+        <section id="pool" class = "board">
+            <div id="pool1" >
+                <img id= "dragESP" value = "hola" src="img/hola.jpg" class = "options" ondragstart="drag(event)" draggable="true">
+            </div>
+            <div id="pool2" class="board" ondrop="drop(event)" ondragover="allowDrop(event)">
+                pool2
+                <div>
+
+
+                </div>
+            </div>
+            <div id="pool3">
+                <img id= "dragCN" value = "nihao" src="img/nihao.jpg" class = "options" ondragstart="drag(event)" draggable="true">
+            </div>
+
+        </section>
 
         
         <script src="js/main.js"></script>
