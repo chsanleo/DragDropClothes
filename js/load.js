@@ -6,6 +6,9 @@ let load = {
         imgWord.setAttribute('src', `img/${type}/${nameImg}.jpg`);
         imgWord.setAttribute('id', `id${type}${num}`);
         imgWord.setAttribute('class', `option`);
+            imgWord.setAttribute("draggable", true);
+            imgWord.setAttribute("ondragstart", "drag(event)");
+            //imgWord.setAttribute("ondrop", "drop(event)");
         return imgWord;
     },
     generateWords(words1,words2) {
@@ -13,8 +16,8 @@ let load = {
         let poolRight = document.getElementById('pool3');
 
         for (let wordIndex in words1) {
-            poolLeft.appendChild(this.createNodeIMG(LANGUAGE1, words1[wordIndex]),wordIndex);
-            poolRight.appendChild(this.createNodeIMG(LANGUAGE2, words2[wordIndex]),wordIndex);
+            poolLeft.appendChild(this.createNodeIMG(LANGUAGE1, words1[wordIndex],wordIndex));
+            poolRight.appendChild(this.createNodeIMG(LANGUAGE2, words2[wordIndex],wordIndex));
         }
-    }
+    }    
 };
