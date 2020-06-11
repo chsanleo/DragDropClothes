@@ -13,3 +13,16 @@ function drop(ev){
 }
 
 
+const containers = document.getElementsByClassName('container');
+const options = document.getElementsByClassName('option');
+
+for (const container of containers) {
+    container.setAttribute("ondragover","allowDrop(event)");
+    container.setAttribute("ondrop","drop(event)");
+}
+
+for (const option of options) {
+    option.setAttribute("draggable", true);
+    option.setAttribute("ondragstart","drag(event)");
+    option.setAttribute("ondrop","drop(event)");
+}
