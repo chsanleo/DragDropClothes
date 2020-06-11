@@ -7,18 +7,7 @@ let words2 = ['nihao','zaijian','xiexie'];//sustituir por llamada a back
 
 
 load.generateWords(words1,words2);
-
-
-
-
-
-
-const containers = document.getElementsByClassName('container');
-
-for (const container of containers) {
-    container.setAttribute("ondragover", "allowDrop(event)");
-    container.setAttribute("ondrop", "drop(event)");
-}
+load.generateDropable();
 
 //Drag and Drop methods
 function drag(ev) {

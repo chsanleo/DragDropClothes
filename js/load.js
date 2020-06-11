@@ -6,10 +6,17 @@ let load = {
         imgWord.setAttribute('src', `img/${type}/${nameImg}.jpg`);
         imgWord.setAttribute('id', `id${type}${num}`);
         imgWord.setAttribute('class', `option`);
-            imgWord.setAttribute("draggable", true);
-            imgWord.setAttribute("ondragstart", "drag(event)");
-            //imgWord.setAttribute("ondrop", "drop(event)");
+        imgWord.setAttribute("draggable", true);
+        imgWord.setAttribute("ondragstart", "drag(event)");
         return imgWord;
+    },
+    generateDropable(){
+        const containers = document.getElementsByClassName('container');
+
+        for (const container of containers) {
+            container.setAttribute("ondragover", "allowDrop(event)");
+            container.setAttribute("ondrop", "drop(event)");
+        }
     },
     generateWords(words1,words2) {
         let poolLeft = document.getElementById('pool1');
