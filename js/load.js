@@ -15,7 +15,7 @@ let load = {
 
         for (const container of containers) {
             container.setAttribute("ondragover", "allowDrop(event)");
-            container.setAttribute("ondrop", "drop(event)");
+            container.setAttribute("ondrop", "drop(event,this)");
         }
     },
     generateWords(words1,words2) {
