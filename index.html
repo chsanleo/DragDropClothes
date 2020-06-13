@@ -1,28 +1,31 @@
 <!DOCTYPE html>
- <html >
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Drag & Drop</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <h3></h3>
+<html>
 
-        <section id="pool" class = "board">
-            <div id="pool1" class = "container" >
-                <img id= "dragESP" src="img/hola.jpg" class = "option">
-            </div>
-            <div id="pool2" class = "container"></div>
-            <div id="pool3" class = "container">
-                <img id= "dragCN" src="img/nihao.jpg" class = "option" >
-            </div>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Drag & Drop</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-        </section>
+<body>
+    <h3></h3>
 
-        
-        <script src="js/main.js"></script>
-    </body>
+    <section id="pool" class="board">
+        <div id="pool1" class="container"></div>
+        <div id="pool2" class="container board"></div>
+        <div id="pool3" class="container"></div>
+    </section>
+
+    <section>
+        <button onclick="checkWords()">ss</button>
+    </section>
+
+    <script src="js/dragANDdrop.js"></script>
+    <script src="js/load.js"></script>
+    <script src="js/operation.js"></script>
+    <script src="js/main.js"></script>
+</body>
 </html>
