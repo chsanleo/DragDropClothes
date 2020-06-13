@@ -4,20 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node js/endPoint.js",
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chsanleo/DragDropWords.git"
   },
-  "author": "christian sanchez leon",
+  "author": "Christian Sanchez Leon, https://github.com/chsanleo",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/chsanleo/DragDropWords/issues"
   },
   "homepage": "https://github.com/chsanleo/DragDropWords#readme",
   "dependencies": {
-    "express": "4.17.1"
+    "express": "4.17.1",
+    "mysql2": "2.1.0",
+    "sequelize": "5.21.12"
   }
 }
