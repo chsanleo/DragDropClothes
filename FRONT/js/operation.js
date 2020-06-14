@@ -3,7 +3,7 @@ function chekResults() {
     let pool = document.getElementById('pool2');
 
     if (pool.childElementCount != 2) {
-        resultMssg('Introduce 2 palabras, de cada idioma');
+        resultMssg('Choose two words, one of each language');
         return;
     }
     checkCorrect(pool.firstChild, pool.lastChild);

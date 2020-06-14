@@ -4,7 +4,7 @@ const express = require('express');
 const app = express();
 
 const mainRouter = require('./routes/main');
-const wordsRouter = require('/routes/main');
+const wordsRouter = require('./routes/words');
 
 //swagger config
 const swaggerJsdoc = require('swagger-jsdoc');
