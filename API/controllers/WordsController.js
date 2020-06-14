@@ -1,5 +1,6 @@
+
 const WordsController = {
-    async CheckWords(req, res) {
+    async getAll(req, res) {
         try {
 
            res.status(200).send({ message: "" })
