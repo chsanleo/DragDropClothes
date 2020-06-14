@@ -66,7 +66,8 @@ localhost:3000/api-doc
 
 use the browser of your choice and with the developer tools test. 
 
-(https://www.formacionprofesional.info/wp-content/uploads/2015/09/herramientas_desarrollo_iexplorer11.png)
+
+![devtools](https://www.formacionprofesional.info/wp-content/uploads/2015/09/herramientas_desarrollo_iexplorer11.png)
 
 ## Used Tools 🛠️
 
