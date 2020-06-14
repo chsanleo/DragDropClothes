@@ -8,6 +8,31 @@
     padding: 1em;
 
 }
+h3{
+    text-align: center;
+    padding: 1em;
+}
+h4{
+    text-align: center;
+    padding: 1em;
+}
+
+.mastfoot{
+    text-align: center;
+}
+#chekResults{
+    align-content: center;
+    padding:1em;
+    text-align: center;
+}
+
+.ok{
+    color:green;
+}
+.incorrect{
+    color:red;
+}
+
 
 #pool1{
     flex:30%;
