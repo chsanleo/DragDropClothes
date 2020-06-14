@@ -8,7 +8,7 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      value: {
+      term: {
         type: Sequelize.STRING
       },
       idLanguage: {
