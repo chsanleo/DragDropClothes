@@ -4,6 +4,7 @@ const express = require('express');
 const app = express();
 
 const mainRouter = require('./routes/main');
+const wordsRouter = require('/routes/main');
 
 //swagger config
 const swaggerJsdoc = require('swagger-jsdoc');
@@ -28,5 +29,6 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
 app.use(express.json());
 
 app.use('/main', mainRouter);
+app.use('/words',wordsRouter);
 
 app.listen(PORT, () => console.log('Server online'));
