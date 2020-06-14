@@ -1,24 +1,35 @@
-function checkWords(){
+function chekResults() {
 
     let pool = document.getElementById('pool2');
-    if(pool.childElementCount!=2){
-        alert('Introduce 2 palabras, de cada idioma');
+
+    if (pool.childElementCount != 2) {
+        resultMssg('Introduce 2 palabras, de cada idioma');
         return;
     }
-    checkCorrect(pool.firstChild,pool.lastChild);
+    checkCorrect(pool.firstChild, pool.lastChild);
 }
 
+function resultMssg(mssg) {
+    let message = document.getElementById('resultMssg');
+    message.innerHTML = mssg;
+
+    let clase = message.getAttribute("class");
+
+    if (mssg.includes('Correct')) { clase = clase.replace('incorrect', 'ok'); }
+    else { clase = clase.replace('ok', 'incorrect'); }
+
+    message.setAttribute("class", clase);
+}
+
+
 //pasar a back
-function checkCorrect(word1, word2){
-    let id1= word1.id.replace(LANGUAGE1,'');
-    id1= id1.replace(LANGUAGE2,'');
+function checkCorrect(word1, word2) {
+    let id1 = word1.id.replace(LANGUAGE1, '').replace(LANGUAGE2, '');
+    let id2 = word2.id.replace(LANGUAGE1, '').replace(LANGUAGE2, '');
 
-    let id2= word2.id.replace(LANGUAGE1,'');
-    id2= id2.replace(LANGUAGE2,'');
-
-    if(id1.includes(id2)){
-        alert('correct!');
+    if (id1.includes(id2)) {
+        resultMssg('Correct!');
         return;
     }
-    alert('not correct');
+    resultMssg('Try Again!');
 }
