@@ -1,5 +1,5 @@
 # DragDrop, LearnWords
-
+![badge](https://img.shields.io/badge/working-active-brig)
 Program proposed as an exercise to work with the Drag & Drop of HTML5.
 It has been added different functionalities such as a backend in express, using swagger for documentation and sequelize as ORM.
 
@@ -31,8 +31,11 @@ INSERT INTO word (term,idLanguage) VALUES (?,?);
  
 + and... WORK.
 
+## Project status
 
-### TODO 📋
+>Now working adding more features add improvements on it.
+
+### Roadmap 📋
 
 **About the frontEnd**
 
@@ -48,8 +51,9 @@ INSERT INTO word (term,idLanguage) VALUES (?,?);
 
 **About features**
 
-+ Create a User system to storage information about.
++ Create a User system to storage information.
 + Create a Choose language System to learn different languages.
+
 
 
 ## Test the application ⚙️
@@ -85,7 +89,7 @@ _Menciona las herramientas que utilizaste para crear tu proyecto_
 
 
 ## License 📄
-
+[![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
 You can use it without problems, just mention me or contact me for it.
 
 
@@ -93,4 +97,4 @@ You can use it without problems, just mention me or contact me for it.
 
 * Tell others about this project 📢
 * Pay a beer 🍺 or coffee ☕ to me ;). 
-* etc.
+* Comments about always welcome!.
