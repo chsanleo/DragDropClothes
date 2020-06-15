@@ -1,5 +1,6 @@
-# DragDrop, LearnWords
+# Drag&Drop, LearnWords
 ![badge](https://img.shields.io/badge/working-active-brig)
+
 Program proposed as an exercise to work with the Drag & Drop of HTML5.
 It has been added different functionalities such as a backend in express, using swagger for documentation and sequelize as ORM.
 
@@ -33,7 +34,7 @@ INSERT INTO word (term,idLanguage) VALUES (?,?);
 
 ## Project status
 
->Now working adding more features add improvements on it.
+>Now working adding more features and improvements on it.
 
 ### Roadmap 📋
 
@@ -75,8 +76,6 @@ use the browser of your choice and with the developer tools test.
 
 ## Used Tools 🛠️
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
-
 * [Swagger](https://www.npmjs.com/package/swagger-ui-express) - API docs
 * [swagger-jsdoc](https://www.npmjs.com/package/swagger-jsdoc) - API docs
 * [sequelize](https://www.npmjs.com/package/sequelize) - ORM
@@ -90,7 +89,8 @@ _Menciona las herramientas que utilizaste para crear tu proyecto_
 
 ## License 📄
 [![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
-You can use it without problems, just mention me or contact me for it.
+
+You can use it without hesitation, just mention me or contact me for it.
 
 
 ## How to say 'thanks' to me  🎁
